@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porte Folio Baptiste </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a7ddc268b6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo_perso.png" alt="Baptiste" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#about">A propos de moi</a></li>
+                    <li><a href="#project">Mes Projets</a></li>
+                    <li><a href="#contact">Me contacter</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Étudiant en <span>Informatique</span></p>
+                <h1><span>Baptiste</span> Tronel-Peyroz <br>Bienvenue sur mon <span>Porte Folio</span></h1>
+            </div>
+        </div>
+    </div>
+    <!-- about -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="espacetravail.jpg" alt="photo perso">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">A propos de moi</h1>
+                    <p>Je suis Baptiste Tronel-Peyroz, étudiant en deuxième année de prépa intégrée dans le domaine de l'informatique au CESI. Je suis actuellement à la recherche d'une alternance pour une durée de 3 ans dans le développement web qui me passionne.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('parcours')">Etudes</p>
+                        <p class="tab-links" onclick="opentab('loisirs')">Loisirs</p>
+                        <p class="tab-links" onclick="opentab('langues')">Expériences</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="parcours">
+                        <ul>
+                            <li><span>Baccalauréat</span> (2022)<br>Lycée Françoise (Torunefeuille) spécialitées Maths, Physique, SES et option Maths experte. </li>
+                            <li><span>Brevet</span> (2019)<br>Collège Léonard de Vinci (Tournefeuille)</li>
+                            <li><span>Fançais</span><br>Langue Maternelle</li>
+                            <li><span>Anglais</span><br>Niveau B1 (585 TOEIC)</li>
+                            <li><span>Espagnol</span><br>Niveau Scolaire </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="loisirs">
+                        <ul>
+                            <li><span>Rugby</span> (2009 - 2022)<br>Pratiqué pendant 13 ans à Tournefeuille en tant que demi de mêlée.</li>
+                            <li><span>Nouvelles technologies</span><br>exploitation et
+                                utilisation de l’impression 3d pour des
+                                projets personnels</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="langues">
+                        <ul>
+                            <li><span>Piscine Municipale de Tournefeuille</span> (juillet 2022)<br>Entretient du bassin et des abords.</li>
+                            <li><span>Intermarché Plaisance du Touch </span>(octobre 2022 - Aujourd'hui)<br>Hôte de caisse, mise en rayon, accueil</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Mes Pojets -->
+    <div id="project">
+        <div class="container">
+            <h1 class="sub-title">Mes projets</h1>
+            <div class="projets-list">
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>Developpement WEB</h2>
+                    <p>Création d'une application de recherche d'offre d'emploi. Le projet comportait le front et le back end d'un site WEB. <br>Les languages étidiés : HTML, CSS, JAVASCRIPT, PHP. </p>
+                    <a href="#">Voir le projet</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Programmation objet</h2>
+                    <p>Création d'une application qui intéroge une base de donnée en C++ avec une interface graphique ne C++/CLI</p>
+                    <a href="#">Voir le projet</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Système embarqués</h2>
+                    <p>Création d'une station météo en C/Arduino. Ce projet faisait appel à gestion des entrées et des sorties, structure de programme et l'optimisation des ressources.</p>
+                    <a href="#">Voir le projet</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- contact -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Me contacter</h1>
+                    <p><i class="fas fa-paper-plane"></i>  tronelpeyroz.baptiste@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>  06 51 17 68 66</p>
+                    <div class="social-icon">
+                        <a href="https://fr.linkedin.com/in/baptiste-tronel-peyroz-8a03a72a0?original_referer=https%3A%2F%2Fwww.linkedin.com%2F"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="" download class="btn btn2">Télécharger mon CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="name" placeholder="Votre Nom" required>
+                        <input type="text" name="mail" placeholder="Votre mail" required>
+                        <textarea name="message" rows="6" placeholder="Votre message"></textarea>
+                        <button class="btn btn2" type="submit">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemeu.style.right = "0";
+        }
+        function closemenu(){
+            sidemeu.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
