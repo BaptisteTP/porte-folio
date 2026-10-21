@@ -1,6 +1,7 @@
 import React from 'react';
 import { 
   Code2, 
+  Activity,
   Globe2, 
   Terminal, 
   Users2, 
@@ -21,7 +22,7 @@ export default function Skills() {
           </div>
 
           <div className="skills-page-layout">
-            {/* 1. Langages de programmation */}
+            {/* 1. Langages de programmation (Python, Java, JS/TS, C#, C/C++, SQL) */}
             <div className="skills-block">
               <h2 className="project-subheading">
                 <Code2 size={20} />
@@ -37,7 +38,23 @@ export default function Skills() {
               </div>
             </div>
 
-            {/* 2. Web & Frameworks */}
+            {/* 2. SRE, Big Data & Systèmes */}
+            <div className="skills-block" style={{ marginTop: '40px' }}>
+              <h2 className="project-subheading">
+                <Activity size={20} />
+                <span>{t.skills.categories.sreData}</span>
+              </h2>
+              <div className="skills-grid">
+                {t.skills.sreDataList.map((item, idx) => (
+                  <div key={idx} className="skill-card">
+                    <h4>{item.name}</h4>
+                    <p>{item.desc}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* 3. Web & Frameworks */}
             <div className="skills-block" style={{ marginTop: '40px' }}>
               <h2 className="project-subheading">
                 <Globe2 size={20} />
@@ -53,7 +70,7 @@ export default function Skills() {
               </div>
             </div>
 
-            {/* 3. Outils, Systèmes & DevOps */}
+            {/* 4. Outils & DevOps */}
             <div className="skills-block" style={{ marginTop: '40px' }}>
               <h2 className="project-subheading">
                 <Terminal size={20} />
@@ -69,7 +86,7 @@ export default function Skills() {
               </div>
             </div>
 
-            {/* 4. Méthodologies & Génie Logiciel */}
+            {/* 5. Méthodologies & Génie Logiciel */}
             <div className="skills-block" style={{ marginTop: '40px' }}>
               <h2 className="project-subheading">
                 <Layers size={20} />
@@ -85,7 +102,7 @@ export default function Skills() {
               </div>
             </div>
 
-            {/* 5. Soft Skills (Savoir-être) */}
+            {/* 6. Soft Skills (Savoir-être) */}
             <div className="skills-block" style={{ marginTop: '40px' }}>
               <h2 className="project-subheading">
                 <Users2 size={20} />

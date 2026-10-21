@@ -8,17 +8,17 @@ export const translations = {
       contact: "Contact"
     },
     hero: {
-      status: "Recherche d'alternance • 3 ans",
+      status: "Alternant SRE chez EDF • Étudiant Ingénieur CESI",
       hello: "Bonjour, je suis",
-      subtitle: "Étudiant Ingénieur en Informatique",
-      description: "Étudiant au CESI (Labège), passionné par le développement web et le génie logiciel. Rigoureux et orienté pratique, je conçois des projets académiques et personnels propres, performants et documentés.",
+      subtitle: "Alternant SRE chez EDF & Étudiant Ingénieur",
+      description: "Étudiant ingénieur au CESI (Toulouse) et actuellement Alternant Site Reliability Engineer (SRE) chez EDF. Spécialisé dans la fiabilité des systèmes, le développement backend/data (Python, Java, Big Data) et le génie logiciel.",
       ctaProjects: "Consulter mes projets",
       ctaResume: "Télécharger mon CV (PDF)",
       chipLabel: "École d'ingénieurs"
     },
     about: {
       title: "Parcours & Expériences",
-      lead: "Formation d'ingénieur, expériences en entreprise et engagement personnel.",
+      lead: "Formation d'ingénieur au CESI et parcours professionnel axé sur la fiabilité des systèmes et le génie logiciel.",
       tabs: {
         experience: "Expériences professionnelles",
         studies: "Formations",
@@ -27,30 +27,36 @@ export const translations = {
       },
       experiences: [
         {
-          date: "Avril 2024 - Juin 2024",
-          title: "Stagiaire Développeur Web",
-          place: "EDF — Direction des Systèmes d'Informations et du Numérique (DSIN)",
-          desc: "Stage technique de 2ème année : travaux et évolutions sur le site web EDF Particuliers."
+          date: "Septembre 2024 - Présent",
+          title: "Alternant SRE (Site Reliability Engineer)",
+          place: "EDF — Direction des Systèmes d'Information et du Numérique",
+          desc: "Fiabilisation, exploitation et observabilité des environnements. Développement et automatisation en Python, traitement Big Data, maintien en conditions opérationnelles et industrialisation des flux applicatifs."
         },
         {
-          date: "Octobre 2022 - Présent",
+          date: "Avril 2024 - Juin 2024",
+          title: "Stagiaire Développeur Web",
+          place: "EDF — Direction des Systèmes d'Information et du Numérique",
+          desc: "Stage technique de 2ème année : travaux d'évolution et d'intégration sur le site web EDF Particuliers."
+        },
+        {
+          date: "Octobre 2022 - Septembre 2024",
           title: "Employé Polyvalent (Emploi étudiant)",
           place: "Intermarché — Plaisance-du-Touch",
-          desc: "Hôte de caisse, accueil des clients, mise en rayon et service Drive en parallèle de mon cursus d'ingénieur."
+          desc: "Hôte de caisse, accueil des clients, mise en rayon et service Drive menés en parallèle de mon cursus préparatoire d'ingénieur."
         },
         {
           date: "Juillet 2022 - Août 2022",
           title: "Agent d'Entretien",
           place: "Mairie de Tournefeuille — Piscine Municipale",
-          desc: "Entretien technique des installations, respect des normes d'hygiène et de sécurité."
+          desc: "Entretien technique des installations, respect rigoureux des normes de sécurité et d'hygiène."
         }
       ],
       studies: [
         {
           date: "2023 - Présent",
-          title: "Cycle Ingénieur Informatique (FISA / Prépa intégrée)",
-          place: "CESI École d'Ingénieurs — Labège",
-          desc: "Pédagogie active par projets (PBL) : Architecture microservices, génie logiciel et POO (C++, C#), développement web (React, Express, PHP, Symphony), bases de données relationnelles SQL et systèmes embarqués (C/Arduino)."
+          title: "Cycle Ingénieur Informatique (FISA / CESI)",
+          place: "CESI École d'Ingénieurs — Labège (Toulouse)",
+          desc: "Pédagogie active par projets (PBL) : Architecture logicielle & microservices, POO et génie logiciel (Java, C#, C++), scripting et data (Python), bases de données SQL/NoSQL et systèmes distribués."
         },
         {
           date: "2019 - 2022",
@@ -96,48 +102,54 @@ export const translations = {
     },
     skills: {
       title: "Compétences & Outils",
-      lead: "Aperçu de mes compétences techniques, méthodes de travail et qualités humaines.",
+      lead: "Aperçu de mes compétences techniques, méthodes SRE/DevOps, langages et qualités humaines.",
       categories: {
         languages: "Langages de programmation",
+        sreData: "SRE, Big Data & Systèmes",
         webFrameworks: "Web & Frameworks",
-        toolsEnvironment: "Outils, Systèmes & DevOps",
+        toolsEnvironment: "Outils & DevOps",
         softSkills: "Savoir-être (Soft Skills)",
         methodologies: "Méthodologie & Génie Logiciel"
       },
       languagesList: [
-        { name: "JavaScript / TypeScript", desc: "ES6+, logique asynchrone, typage statique" },
-        { name: "C# (.NET)", desc: "Programmation orientée objet, conception d'applications" },
-        { name: "C / C++", desc: "Gestion mémoire, algorithmique, microcontrôleurs" },
-        { name: "PHP", desc: "Architecture MVC, développement back-end" },
-        { name: "SQL", desc: "Modélisation relationnelle, requêtes complexes" },
-        { name: "Python", desc: "Scripts d'automatisation, data, calcul scientifique" }
+        { name: "Python", desc: "Automatisation, scripts SRE, traitement et analyse de données (Big Data)" },
+        { name: "Java", desc: "Programmation orientée objet, backend robuste, architectures d'entreprise" },
+        { name: "JavaScript / TypeScript", desc: "ES6+, logique asynchrone, typage statique, React/Node" },
+        { name: "C# (.NET)", desc: "Génie logiciel, POO, architecture d'applications" },
+        { name: "C / C++", desc: "Gestion mémoire bas niveau, algorithmique, microcontrôleurs" },
+        { name: "SQL", desc: "Modélisation relationnelle, requêtes complexes, bases distribuées" }
+      ],
+      sreDataList: [
+        { name: "SRE & Observabilité", desc: "Supervision, suivi des métriques, fiabilisation des environnements et réduction du toïl" },
+        { name: "Big Data & Traitement", desc: "Pipelines de traitement, manipulation de volumes de données et scripts analytiques" },
+        { name: "Systèmes Linux & Scripting", desc: "Administration système Linux, automatisation Bash et PowerShell" },
+        { name: "Industrialisation & CI/CD", desc: "Notions de déploiement continu, intégration et maintenance en conditions opérationnelles" }
       ],
       webList: [
-        { name: "React / Vite", desc: "Hooks, SPA, composants réutilisables, routage" },
+        { name: "React / Vite", desc: "Hooks, SPA, composants modulaires, architecture front-end" },
         { name: "Node.js / Express", desc: "APIs REST, architecture microservices, middlewares" },
-        { name: "HTML5 / CSS3", desc: "Mise en page responsive, Flexbox, CSS Grid, accessibilité" },
-        { name: "Symfony / Blade", desc: "Frameworks PHP, templating et gestion de données" }
+        { name: "PHP / Symfony / Blade", desc: "Développement web MVC, templating et gestion de données" },
+        { name: "HTML5 / CSS3", desc: "Responsive design, Flexbox, CSS Grid, intégration soignée" }
       ],
       toolsList: [
         { name: "Git & GitHub", desc: "Gestion de versions, branches, pull requests, collaboration" },
-        { name: "Bases de données", desc: "MySQL, PostgreSQL, SQL Server, modélisation conceptuelle" },
+        { name: "Bases de données", desc: "PostgreSQL, MySQL, SQL Server, stockage de données volumineuses" },
         { name: "Figma", desc: "Maquettage, prototypage d'interfaces, intégration design-to-code" },
-        { name: "Systèmes & Linux", desc: "Environnements Windows/Linux, terminal Bash/PowerShell" },
-        { name: "Déploiement & Cloud", desc: "Vercel, notions AWS EC2, GitHub Actions CI/CD" },
-        { name: "Bureautique & CAO", desc: "Suite Office, modélisation CAO 3D pour impression additive" }
+        { name: "Cloud & Déploiement", desc: "Vercel, notions AWS EC2, GitHub Actions" },
+        { name: "Outils & CAO", desc: "Suite bureautique, modélisation CAO 3D pour impression additive" }
       ],
       softSkillsList: [
-        { title: "Rigueur & Sens du détail", desc: "Code propre, structuration claire des données et respect scrupuleux des consignes." },
-        { title: "Esprit d'équipe & Leadership", desc: "Capitaine de rugby pendant 2 ans et habitué aux projets d'ingénierie en groupe." },
-        { title: "Capacité d'adaptation & Ponctualité", desc: "Gestion simultanée et rigoureuse de mes études d'ingénieur et d'un emploi étudiant." },
-        { title: "Résolution de problèmes", desc: "Approche méthodique face aux bugs techniques et recherche de solutions viables." },
-        { title: "Aisance relationnelle", desc: "Expérience du contact client au quotidien (accueil, caisse, drive)." }
+        { title: "Rigueur & Sens du détail", desc: "Exigence indispensable en environnement de production critique (SRE) et code structuré." },
+        { title: "Esprit d'équipe & Leadership", desc: "Capitaine de rugby pendant 2 ans et habitude de la collaboration transverse en entreprise." },
+        { title: "Résolution méthodique de problèmes", desc: "Diagnostic d'incidents, analyse de causes racines (RCA) et recherche de solutions pérennes." },
+        { title: "Adaptabilité & Organisation", desc: "Gestion conjointe et équilibrée des responsabilités professionnelles chez EDF et des études d'ingénieur." },
+        { title: "Communication claire", desc: "Transmission fluide des informations techniques et sens de l'écoute." }
       ],
       methodsList: [
-        { title: "Pédagogie active par projets (PBL)", desc: "Résolution de cas concrets en autonomie et en équipe restreinte." },
-        { title: "Méthodes Agiles & Scrum", desc: "Découpage en sprints, revues, réunions de suivi et backlog." },
-        { title: "Conception Orientée Objet (POO)", desc: "Diagrammes UML, séparation des responsabilités, design patterns." },
-        { title: "Architecture Logicielle", desc: "Compréhension des architectures MVC et des architectures distribuées / microservices." }
+        { title: "Pratiques SRE (Site Reliability Engineering)", desc: "Culture de la fiabilité, surveillance proactive, automatisation et documentation." },
+        { title: "Pédagogie active par projets (PBL)", desc: "Résolution de problématiques concrètes au CESI en autonomie et en équipe." },
+        { title: "Méthodes Agiles & Scrum", desc: "Organisation en sprints, gestion de backlog et livraisons itératives." },
+        { title: "Conception Orientée Objet (POO) & Design Patterns", desc: "Modélisation UML, modularité et séparation des responsabilités." }
       ]
     },
     projects: {
@@ -219,9 +231,9 @@ export const translations = {
     },
     contact: {
       title: "Contact",
-      lead: "N'hésitez pas à me contacter pour une proposition d'alternance ou pour échanger sur mes projets.",
+      lead: "N'hésitez pas à me contacter pour échanger sur mes projets techniques ou pour toute opportunité professionnelle.",
       infoTitle: "Coordonnées",
-      infoDesc: "Disponible pour une alternance de 3 ans en développement informatique.",
+      infoDesc: "Alternant SRE chez EDF & Étudiant Ingénieur au CESI.",
       emailLabel: "Email",
       phoneLabel: "Téléphone",
       downloadCV: "Télécharger mon CV (PDF)",
@@ -231,7 +243,7 @@ export const translations = {
         email: "Adresse Email",
         emailPlaceholder: "ex. jean.dupont@example.com",
         subject: "Objet",
-        subjectPlaceholder: "ex. Proposition d'alternance",
+        subjectPlaceholder: "ex. Prise de contact / Échange technique",
         message: "Message",
         messagePlaceholder: "Votre message...",
         submit: "Envoyer l'email",
@@ -251,17 +263,17 @@ export const translations = {
       contact: "Contact"
     },
     hero: {
-      status: "Seeking 3-year apprenticeship",
+      status: "SRE Apprentice at EDF • CESI Engineering Student",
       hello: "Hello, I am",
-      subtitle: "Computer Science Engineering Student",
-      description: "Engineering student at CESI (Toulouse), focused on software engineering and web technologies. Hands-on and detail-oriented, with clean and well-structured projects.",
+      subtitle: "Site Reliability Engineer Apprentice at EDF & Engineering Student",
+      description: "Computer Science Engineering Student at CESI (Toulouse) and currently Site Reliability Engineer (SRE) Apprentice at EDF. Specialized in system reliability, backend and data engineering (Python, Java, Big Data) and clean software engineering.",
       ctaProjects: "Browse my projects",
       ctaResume: "Download Resume (PDF)",
       chipLabel: "Engineering School"
     },
     about: {
       title: "Background & Experience",
-      lead: "Academic training, work experience, and personal background.",
+      lead: "Engineering degree at CESI and professional experience focused on site reliability, backend development, and big data.",
       tabs: {
         experience: "Work Experience",
         studies: "Education",
@@ -270,22 +282,28 @@ export const translations = {
       },
       experiences: [
         {
-          date: "April 2024 - June 2024",
-          title: "Web Developer Intern",
-          place: "EDF — Information Systems & Digital Directorate (DSIN)",
-          desc: "2nd-year technical internship: contributing to the official EDF Residential Customer portal."
+          date: "September 2024 - Present",
+          title: "Site Reliability Engineer (SRE) Apprentice",
+          place: "EDF — Information Systems & Digital Directorate",
+          desc: "System reliability, monitoring, and observability. Scripting and automation with Python, big data processing pipelines, maintaining high availability in operational environments."
         },
         {
-          date: "October 2022 - Present",
+          date: "April 2024 - June 2024",
+          title: "Web Developer Intern",
+          place: "EDF — Information Systems & Digital Directorate",
+          desc: "2nd-year technical internship: contributing to feature improvements on the official EDF Residential Customer portal."
+        },
+        {
+          date: "October 2022 - September 2024",
           title: "Store Associate & Cashier (Part-time student job)",
           place: "Intermarché — Plaisance-du-Touch",
-          desc: "Customer service, cash management, stock organization, and drive service alongside full-time engineering studies."
+          desc: "Customer service, cash register management, stock organization, and drive service managed alongside preparatory engineering studies."
         },
         {
           date: "July 2022 - August 2022",
           title: "Facility Maintenance Associate",
           place: "Tournefeuille City Hall — Public Pool",
-          desc: "Technical maintenance of facilities adhering to hygiene and safety protocols."
+          desc: "Technical maintenance of facilities strictly adhering to hygiene and safety protocols."
         }
       ],
       studies: [
@@ -293,7 +311,7 @@ export const translations = {
           date: "2023 - Present",
           title: "Computer Science Engineering Degree (CESI)",
           place: "CESI Graduate School of Engineering — Toulouse",
-          desc: "Problem-Based Learning: Microservices architecture, Object-Oriented Software Design (C++, C#), Web development (React, Express, PHP, Symphony), SQL databases, and embedded systems (C/Arduino)."
+          desc: "Problem-Based Learning: Software & microservices architecture, OOP (Java, C#, C++), scripting and data (Python), relational & distributed databases, and system reliability."
         },
         {
           date: "2019 - 2022",
@@ -339,48 +357,54 @@ export const translations = {
     },
     skills: {
       title: "Skills & Tools",
-      lead: "An overview of my technical capabilities, software tools, and interpersonal skills.",
+      lead: "An overview of my technical capabilities, SRE & data engineering tools, and soft skills.",
       categories: {
         languages: "Programming Languages",
+        sreData: "SRE, Big Data & Systems",
         webFrameworks: "Web & Frameworks",
-        toolsEnvironment: "Tools, Systems & DevOps",
+        toolsEnvironment: "Tools & DevOps",
         softSkills: "Soft Skills",
         methodologies: "Methodologies & Software Engineering"
       },
       languagesList: [
-        { name: "JavaScript / TypeScript", desc: "ES6+, asynchronous programming, static typing" },
-        { name: "C# (.NET)", desc: "Object-oriented programming, application development" },
-        { name: "C / C++", desc: "Memory management, algorithms, microcontrollers" },
-        { name: "PHP", desc: "MVC architecture, backend development" },
-        { name: "SQL", desc: "Relational database modeling, complex queries" },
-        { name: "Python", desc: "Automation scripts, data manipulation, computing" }
+        { name: "Python", desc: "Automation, SRE scripting, big data processing and analytical pipelines" },
+        { name: "Java", desc: "Object-oriented programming, enterprise backend architecture" },
+        { name: "JavaScript / TypeScript", desc: "ES6+, asynchronous logic, static typing, React/Node" },
+        { name: "C# (.NET)", desc: "Software engineering, OOP, application design" },
+        { name: "C / C++", desc: "Low-level memory management, algorithms, microcontrollers" },
+        { name: "SQL", desc: "Relational database modeling, complex queries, distributed data" }
+      ],
+      sreDataList: [
+        { name: "SRE & Observability", desc: "Monitoring, metrics tracking, system resilience, and toil reduction" },
+        { name: "Big Data & Data Pipelines", desc: "Data manipulation, analytical workflows, handling high-volume datasets" },
+        { name: "Linux Systems & Scripting", desc: "Linux system administration, automation via Bash and PowerShell" },
+        { name: "CI/CD & Industrialization", desc: "Continuous integration concepts, operational maintenance and deployment" }
       ],
       webList: [
-        { name: "React / Vite", desc: "Hooks, SPA, reusable component design, routing" },
+        { name: "React / Vite", desc: "Hooks, SPA, modular component design, frontend architecture" },
         { name: "Node.js / Express", desc: "REST APIs, microservices architecture, middlewares" },
-        { name: "HTML5 / CSS3", desc: "Responsive layout, Flexbox, CSS Grid, accessibility" },
-        { name: "Symfony / Blade", desc: "PHP frameworks, templating, and data handling" }
+        { name: "PHP / Symfony / Blade", desc: "MVC web applications, templating, and data handling" },
+        { name: "HTML5 / CSS3", desc: "Responsive design, Flexbox, CSS Grid, clean integration" }
       ],
       toolsList: [
         { name: "Git & GitHub", desc: "Version control, branches, pull requests, collaboration" },
-        { name: "Databases", desc: "MySQL, PostgreSQL, SQL Server, conceptual modeling" },
+        { name: "Databases", desc: "PostgreSQL, MySQL, SQL Server, large scale data stores" },
         { name: "Figma", desc: "UI wireframing, interactive prototyping, design-to-code" },
-        { name: "Systems & Linux", desc: "Windows / Linux environments, Bash / PowerShell" },
-        { name: "Cloud & Deployment", desc: "Vercel, AWS EC2 basics, GitHub Actions CI/CD" },
+        { name: "Cloud & Deployment", desc: "Vercel, AWS EC2 basics, GitHub Actions" },
         { name: "Office & CAD", desc: "Office tools, 3D CAD modeling for additive manufacturing" }
       ],
       softSkillsList: [
-        { title: "Rigor & Precision", desc: "Clean code, structured data, and strict adherence to requirements." },
-        { title: "Teamwork & Leadership", desc: "Rugby captain for 2 years and practiced at group engineering projects." },
-        { title: "Adaptability & Punctuality", desc: "Successfully balancing demanding engineering coursework with part-time employment." },
-        { title: "Problem-Solving Mindset", desc: "Methodical debugging and persistent search for functional solutions." },
-        { title: "Communication & Customer Relations", desc: "Daily customer-facing experience (cashier, greeting, drive-thru)." }
+        { title: "Rigor & Attention to Detail", desc: "Essential in critical production environments (SRE) and maintainable codebases." },
+        { title: "Teamwork & Leadership", desc: "Rugby captain for 2 years and experienced with cross-functional corporate teams." },
+        { title: "Root-Cause Problem Solving", desc: "Incident diagnostics, root cause analysis (RCA), and reliable permanent fixes." },
+        { title: "Adaptability & Organization", desc: "Successfully balancing demanding engineering coursework with professional duties at EDF." },
+        { title: "Clear Communication", desc: "Effective technical documentation, clear reporting, and active listening." }
       ],
       methodsList: [
-        { title: "Problem-Based Learning (PBL)", desc: "Hands-on resolution of engineering scenarios individually and in teams." },
-        { title: "Agile & Scrum Methodologies", desc: "Sprint cycles, retrospectives, backlogs, and milestone tracking." },
-        { title: "Object-Oriented Design (OOP)", desc: "UML diagrams, separation of concerns, design patterns." },
-        { title: "Software Architecture", desc: "Solid understanding of MVC and distributed / microservice patterns." }
+        { title: "Site Reliability Engineering (SRE)", desc: "Reliability culture, proactive monitoring, automation, and incident post-mortems." },
+        { title: "Problem-Based Learning (PBL)", desc: "Hands-on engineering problem resolution at CESI individually and in teams." },
+        { title: "Agile & Scrum Methodologies", desc: "Sprint cycles, retrospectives, backlogs, and iterative milestones." },
+        { title: "Object-Oriented Design (OOP) & Patterns", desc: "UML modeling, modularity, and separation of concerns." }
       ]
     },
     projects: {
@@ -462,9 +486,9 @@ export const translations = {
     },
     contact: {
       title: "Contact",
-      lead: "Feel free to reach out regarding apprenticeship opportunities or technical projects.",
+      lead: "Feel free to reach out to connect or discuss technical projects.",
       infoTitle: "Contact Details",
-      infoDesc: "Available for a 3-year apprenticeship program in software and web engineering.",
+      infoDesc: "SRE Apprentice at EDF & Engineering Student at CESI.",
       emailLabel: "Email",
       phoneLabel: "Phone",
       downloadCV: "Download Resume (PDF)",
@@ -474,7 +498,7 @@ export const translations = {
         email: "Email Address",
         emailPlaceholder: "e.g. john.doe@example.com",
         subject: "Subject",
-        subjectPlaceholder: "e.g. Apprenticeship Opportunity",
+        subjectPlaceholder: "e.g. Technical Discussion / Networking",
         message: "Message",
         messagePlaceholder: "Your message...",
         submit: "Send Email",
